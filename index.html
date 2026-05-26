@@ -412,51 +412,8 @@ hr.divider{border:none;height:1px;background:var(--border-faint);}
 .spec-val{font-size:16px;font-weight:600;color:var(--white);margin-bottom:4px;}
 .spec-note{font-size:13px;font-weight:300;color:var(--grey);line-height:1.5;}
 
-/* ============ DESIGNS ============ */
-.designs{background:var(--dark);}
-.design-cards{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:3px;margin-top:48px;
-}
-.dc{
-  background:var(--card);border:1px solid var(--border-faint);
-  padding:36px 32px;position:relative;overflow:hidden;
-  transition:border-color 0.3s;
-}
-.dc:hover{border-color:var(--border);}
-.dc-ghost{
-  position:absolute;top:0;right:12px;
-  font-family:'Bebas Neue',sans-serif;font-size:120px;
-  color:rgba(0,229,204,0.04);line-height:1;pointer-events:none;
-}
-.dc-num{
-  font-family:'Share Tech Mono',monospace;font-size:10px;
-  letter-spacing:3px;color:var(--teal);
-  text-transform:uppercase;margin-bottom:8px;
-}
-.dc-name{
-  font-family:'Bebas Neue',sans-serif;font-size:30px;
-  letter-spacing:1px;margin-bottom:14px;
-}
-.dc-desc{
-  font-size:14px;font-weight:300;
-  color:var(--grey-light);line-height:1.65;margin-bottom:20px;
-}
-.dc-tier{
-  display:inline-block;
-  font-family:'Share Tech Mono',monospace;font-size:9px;
-  letter-spacing:2px;color:var(--black);
-  background:var(--teal);padding:4px 12px;
-  text-transform:uppercase;
-}
-.dc-tier.gold-tier{color:var(--black);}
-.dc-tier.plat-tier{
-  background:linear-gradient(90deg,var(--teal));
-  color:var(--black);
-}
-
-/* ============ PACKAGES ============ */
-.designs{display:flex;flex-direction:column;min-height:100vh;padding:80px 0 0;}
+/* ============ DESIGNS / PACKAGES ============ */
+.designs{background:var(--dark);display:flex;flex-direction:column;min-height:100vh;padding:80px 0 0;}
 .designs .container{padding-bottom:0;}
 .pkg-showcase{
   display:grid;grid-template-columns:repeat(3,1fr);
@@ -906,7 +863,7 @@ footer{
 
 @media(max-width:900px){
   .opp-layout,.friction-layout,.why-hero-block{grid-template-columns:1fr;}
-  .specs-hex,.design-cards,.impact-grid,.steps-row,.why-bottom,.clips-trio{grid-template-columns:1fr;}
+  .specs-hex,.impact-grid,.steps-row,.why-bottom,.clips-trio{grid-template-columns:1fr;}
   nav{padding:12px 20px;}
   .nav-links{display:none;}
   .container{padding:0 24px;}
@@ -1010,23 +967,23 @@ footer{
           The Key To Happiness celebrates 10 years of progressive underground music in Sri Lanka. With a premium outdoor standing event at Port City Colombo running 8+ hours, high-tier ticket holders expect an experience that is exceptional in every dimension. We are proposing an exclusive utility accessory that transforms a ticket into a <strong style="color:var(--white);">complete premium event package</strong> — something no Sri Lankan event has ever done before.
         </p>
 
-        <div class="opp-stats reveal">
-          <div class="o-stat">
+        <div class="opp-stats">
+          <div class="o-stat reveal">
             <div class="o-stat-stripe"></div>
             <div class="o-stat-num">10</div>
             <div class="o-stat-label">Years of SKG Events</div>
           </div>
-          <div class="o-stat">
+          <div class="o-stat reveal">
             <div class="o-stat-stripe"></div>
             <div class="o-stat-num">4+</div>
             <div class="o-stat-label">Int'l Artists on Stage</div>
           </div>
-          <div class="o-stat">
+          <div class="o-stat reveal">
             <div class="o-stat-stripe"></div>
             <div class="o-stat-num">8+</div>
             <div class="o-stat-label">Hours of Live Event</div>
           </div>
-          <div class="o-stat">
+          <div class="o-stat reveal">
             <div class="o-stat-stripe"></div>
             <div class="o-stat-num">#1</div>
             <div class="o-stat-label">First Ever in Sri Lanka</div>
@@ -1109,54 +1066,54 @@ footer{
   </div>
 
   <div class="container">
-    <div class="clips-trio reveal">
-      <div class="clip">
+    <div class="clips-trio">
+      <div class="clip reveal">
         <img src="inuse.png">
         <div class="clip-tag">In Use</div>
       </div>
-      <div class="clip">
+      <div class="clip reveal">
         <img src="size.png">
         <div class="clip-tag">7.5-Inch Scale</div>
       </div>
     </div>
 
-    <div class="specs-hex reveal">
-      <div class="spec">
+    <div class="specs-hex">
+      <div class="spec reveal">
         <div class="spec-accent"></div>
         <div class="spec-ico">🧵</div>
         <div class="spec-lbl">Strap Material</div>
         <div class="spec-val">Premium High-Density Nylon</div>
         <div class="spec-note">Weatherproof woven construction — rave-tested for all-day outdoor endurance</div>
       </div>
-      <div class="spec">
+      <div class="spec reveal">
         <div class="spec-accent"></div>
         <div class="spec-ico">🔩</div>
         <div class="spec-lbl">Buckle System</div>
         <div class="spec-val">High-Grade Impact Plastic</div>
         <div class="spec-note">Quick-release buckle mechanism with snap-lock security for confident carry</div>
       </div>
-      <div class="spec">
+      <div class="spec reveal">
         <div class="spec-accent"></div>
         <div class="spec-ico">⭕</div>
         <div class="spec-lbl">Bottle Grip</div>
         <div class="spec-val">Anti-Slip Plastic Grip Ring</div>
         <div class="spec-note">High-grade plastic grip design — secures standard 500ml–1L PET bottles firmly</div>
       </div>
-      <div class="spec">
+      <div class="spec reveal">
         <div class="spec-accent"></div>
         <div class="spec-ico">📐</div>
         <div class="spec-lbl">Total Length</div>
         <div class="spec-val">7.5 Inches</div>
         <div class="spec-note">Ergonomically designed to sit at the hip — no movement restriction, dances with you</div>
       </div>
-      <div class="spec">
+      <div class="spec reveal">
         <div class="spec-accent"></div>
         <div class="spec-ico">🔗</div>
         <div class="spec-lbl">Attachment</div>
         <div class="spec-val">Universal Belt Loop Compatible</div>
         <div class="spec-note">Attaches to belt loops, waistbands, or backpack straps in seconds</div>
       </div>
-      <div class="spec">
+      <div class="spec reveal">
         <div class="spec-accent"></div>
         <div class="spec-ico">🎨</div>
         <div class="spec-lbl">Branding</div>
@@ -1343,20 +1300,20 @@ footer{
     </div>
 
     <!-- BOTTOM USP ROW -->
-    <div class="why-bottom reveal">
-      <div class="why-bottom-card">
+    <div class="why-bottom">
+      <div class="why-bottom-card reveal">
         <div class="wbc-accent"></div>
         <div class="wbc-num">01</div>
         <div class="wbc-title">Exclusive Only — Backstage &amp; Above</div>
         <div class="wbc-text">The accessory is not available for purchase. It cannot be bought. It can only be earned by holding a Backstage, Gold, or Platinum ticket — making it genuinely exclusive and deeply desirable.</div>
       </div>
-      <div class="why-bottom-card">
+      <div class="why-bottom-card reveal">
         <div class="wbc-accent"></div>
         <div class="wbc-num">02</div>
         <div class="wbc-title">Earns Press &amp; Media Coverage</div>
         <div class="wbc-text">A genuine "Sri Lanka first" at a 10th anniversary milestone event is a ready-made media story. Entertainment press, lifestyle blogs, and social media will cover it — generating earned media at zero cost to SKG Events.</div>
       </div>
-      <div class="why-bottom-card">
+      <div class="why-bottom-card reveal">
         <div class="wbc-accent"></div>
         <div class="wbc-num">03</div>
         <div class="wbc-title">Zero Operational Burden</div>
@@ -1509,38 +1466,38 @@ footer{
     <h2 class="sec-title reveal">Beyond June 6th —<br><em>Lasting</em> Brand Equity</h2>
     <div class="teal-bar reveal"></div>
 
-    <div class="impact-grid reveal">
-      <div class="imp-card">
+    <div class="impact-grid">
+      <div class="imp-card reveal">
         <div class="imp-stripe"></div>
         <div class="imp-ico">📱</div>
         <div class="imp-title">Organic Social Content</div>
         <div class="imp-text">The exclusive accessory generates unboxing content, on-site photos, and post-event use content — all tagged to Key To Happiness. Free, authentic marketing with zero budget required from SKG Events.</div>
       </div>
-      <div class="imp-card">
+      <div class="imp-card reveal">
         <div class="imp-stripe"></div>
         <div class="imp-ico">🏆</div>
         <div class="imp-title">Pioneer Status in Sri Lanka</div>
         <div class="imp-text">Being first is a competitive moat. Once SKG Events does this, they own the "premium festival utility gear" concept in this market. Future competitors who attempt it are merely following — not leading.</div>
       </div>
-      <div class="imp-card">
+      <div class="imp-card reveal">
         <div class="imp-stripe"></div>
         <div class="imp-ico">♾️</div>
         <div class="imp-title">Infinite Post-Event Impressions</div>
         <div class="imp-text">Unlike wristbands that end at the gate, this accessory is used at gyms, hikes, travel, and future events. Key To Happiness branding lives in the world perpetually — passive, organic, and lasting.</div>
       </div>
-      <div class="imp-card">
+      <div class="imp-card reveal">
         <div class="imp-stripe"></div>
         <div class="imp-ico">💎</div>
         <div class="imp-title">Elevated VIP Retention</div>
         <div class="imp-text">High-tier holders who feel genuinely valued return. This experience builds the loyalty loop that makes Backstage-and-above ticket resale effortless for SKG Events in future editions of Key To Happiness.</div>
       </div>
-      <div class="imp-card">
+      <div class="imp-card reveal">
         <div class="imp-stripe"></div>
         <div class="imp-ico">🌐</div>
         <div class="imp-title">Press &amp; Media Attention</div>
         <div class="imp-text">A Sri Lanka first at a 10th anniversary event is a ready-made editorial story. Entertainment press and lifestyle media will cover the novelty — generating earned coverage that extends the KTH anniversary story.</div>
       </div>
-      <div class="imp-card">
+      <div class="imp-card reveal">
         <div class="imp-stripe"></div>
         <div class="imp-ico">🎯</div>
         <div class="imp-title">Pricing Validation at Scale</div>
@@ -1566,18 +1523,18 @@ footer{
       The 10th anniversary of Key To Happiness is a once-in-a-decade moment. It deserves to be remembered — not just for the music and the artists, but for an experience that showed Sri Lanka's event industry what truly premium looks like.
     </p>
 
-    <div class="steps-row reveal">
-      <div class="step">
+    <div class="steps-row">
+      <div class="step reveal">
         <div class="step-n">01</div>
         <div class="step-t">Confirm Design Selection</div>
         <div class="step-d">Review and select preferred design editions for each ticket tier. Core, Cyber, or Future.</div>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <div class="step-n">02</div>
         <div class="step-t">Lock In Volumes</div>
         <div class="step-d">Confirm quantities based on current Backstage, Gold &amp; Platinum ticket allocations.</div>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <div class="step-n">03</div>
         <div class="step-t">Approve Physical Sample</div>
         <div class="step-d">Receive pre-production samples from IONIK for quality sign-off before the full run.</div>
@@ -1643,7 +1600,7 @@ const obs = new IntersectionObserver((entries) => {
 els.forEach(el => obs.observe(el));
 
 // Staggered child animations
-document.querySelectorAll('.specs-hex,.design-cards,.impact-grid,.steps-row,.opp-stats,.why-bottom,.clips-trio').forEach(grid => {
+document.querySelectorAll('.specs-hex,.impact-grid,.steps-row,.opp-stats,.why-bottom,.clips-trio').forEach(grid => {
   const children = grid.children;
   Array.from(children).forEach((child, i) => {
     child.style.transitionDelay = (i * 0.09) + 's';
